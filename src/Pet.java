@@ -40,7 +40,7 @@ public class Pet {
 
     // Metodos da classe Pet.java
     public void exibirInformacoes(){
-        System.out.println("Nome do pet: " + getNome());
+        System.out.println("\nNome do pet: " + getNome());
         System.out.println("Espécie do pet: " + getEspecie());
         System.out.println("Idade do pet: " + getIdade());
         System.out.println("Valor do serviço: R$" + getValorServico());
@@ -48,6 +48,7 @@ public class Pet {
     }
 
     public double calcularValorComDesconto(){
-        return getValorServico() * 0.10;
+        double desconto = getValorServico() * 0.10;
+        return getValorServico() - desconto;
     }
 }
